@@ -26,9 +26,11 @@ ageTime=nowTime-days_in_secs
 def deleting_old_files(folder):
     global TOTAL_DELETED_FILES
     global TOTAL_DELETED_SIZE
+
     # path ---> path to directory
     # folder_name ---> only name of dir
     # files ---> ls of dir
+    
     for path,folder_name,files in os.walk(folder):
 
         # check for every file
